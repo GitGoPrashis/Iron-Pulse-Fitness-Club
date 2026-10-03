@@ -7,6 +7,7 @@ import PricingData from '../components/PricingData'
 import Trainer from '../components/Trainer'
 import Transformations from '../components/Transformations'
 import Customers from '../components/Customers'
+import Contact from '../components/Contact'
 
 const Homepage = () => {
     return (
@@ -20,6 +21,7 @@ const Homepage = () => {
             <Trainer />
             <Transformations/>
             <Customers/>
+            <Contact/>
 
         </div>
     )

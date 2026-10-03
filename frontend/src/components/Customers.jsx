@@ -54,7 +54,7 @@ const Customers = () => {
                         {testimonialsData.map((testimonial) => (
                             <div
                                 key={testimonial.id}
-                                className="bg-[#111111] rounded-xl p-8 md:p-10 flex flex-col h-full border border-white/5 hover:border-yellow-500/50 shadow-lg transition-all duration-300 hover:-translate-y-1 relative group"
+                                className="bg-[#111111] rounded-xl p-8 md:p-10 flex flex-col h-full border border-l-amber-300 border-l-4 border-white/5  hover:border-grey-500/50 shadow-lg transition-all duration-300 hover:translate-x-2 relative group"
                             >
                                 {/* star Icon */}
                                 <p className=' text-amber-300 text-2xl'>★★★★★</p>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Animated from './Animated'
 
 const features = [
   {
@@ -31,14 +32,23 @@ const Aboutpage = () => {
     >
     <div className="max-w-350 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
+   
       {/* Left Side: Gym Image */}
-      <div className="w-full">
+      {/* <div className="w-full">
         <img
           src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1975"
           alt="Iron Pulse premium fitness club"
           className="w-full h-87.5 md:h-125 lg:h-152.5 object-cover rounded-md grayscale"
         />
-      </div>
+      </div> */}
+      <div className="w-full">
+  <img
+    src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1975"
+    alt="Iron Pulse premium fitness club"
+    className="w-full h-87.5 md:h-125 lg:h-152.5 object-cover rounded-md grayscale transition-all duration-500 ease-in-out hover:-translate-y-2 hover:scale-105 hover:blur-[0px] hover:brightness-70 hover:sepia hover:saturate-30 hover:hue-rotate-350"
+  />
+</div>
+    
 
       {/* Right Side: About Content */}
       <div className="w-full">
