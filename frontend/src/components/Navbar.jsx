@@ -1,7 +1,11 @@
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
+
+  
   // State to control mobile menu visibility
   const [isOpen, setIsOpen] = useState(false);
   
@@ -48,31 +52,18 @@ const Navbar = () => {
     >
       
       {/* Logo */}
-      <div className="text-2xl md:text-3xl font-extrabold tracking-tight z-50">
-        <span className="text-white">IRON</span>
+      <div className="text-2xl md:text-3xl font-extrabold tracking-tight z-50 cursor-pointer"  >
+        <a href="#home">
+        <span  className="text-white">IRON</span>
         <span className="text-yellow-400">PULSE</span>
+        </a>
       </div>
 
       {/* Desktop Navigation */}
       <ul className="hidden md:flex items-center gap-8 lg:gap-10 list-none m-0 p-0">
         {navLinks.map((link) => (
           <li key={link.name}>
-            {/* <a
-              href={link.href}
-              className="text-gray-400 hover:text-white transition duration-300 text-sm font-medium uppercase tracking-wider"
-            >
-              {link.name}
-              <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-yellow-500 transition-all duration-300 ease-out group-hover:w-full"></span>
-            </a> */}
-            {/* <a
-  href={link.href}
-  className="relative group text-gray-400 hover:text-white transition duration-300 text-sm font-medium uppercase tracking-wider"
->
-  {link.name}
-  
-  
-  <span className="absolute left-0 -bottom-1 0.5 w-0 bg-yellow-500 transition-all duration-300 ease-out group-hover:w-full"></span>
-</a> */}
+            
 <a
   href={link.href}
   className="relative text-gray-400 hover:text-white transition duration-300 text-sm font-medium uppercase tracking-wider py-2
@@ -88,12 +79,21 @@ const Navbar = () => {
         ))}
         
         <li>
-          <a
+          {/* <a
+          
+          
             href="#join"
             className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-7 py-3 rounded-md transition duration-300 shadow-lg shadow-yellow-500/20 text-sm uppercase tracking-wider"
           >
             Join Now
-          </a>
+          </a> */}
+          <Link
+        to="/join-us-page"
+        className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-7 py-3 rounded-md transition duration-300 shadow-lg shadow-yellow-500/20 text-sm uppercase tracking-wider inline-block"
+      >
+        Join Now
+      </Link>
+
         </li>
       </ul>
 
@@ -128,7 +128,7 @@ const Navbar = () => {
           <li className="w-full flex justify-center mt-2">
             <a
               href="#join"
-              onClick={closeMenu}
+              onClick={closeMenu} 
               className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-10 py-3 rounded-md transition duration-300 shadow-lg shadow-yellow-500/20 text-base uppercase tracking-wider"
             >
               Join Now

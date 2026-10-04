@@ -76,7 +76,7 @@ const CheckIcon = () => (
 const PricingData = () => {
   return (
     <>
-    <section className="bg-[#0a0a0a] py-24 px-4 md:px-8 font-sans">
+    <section className="bg-[#0a0a0a] py-24 px-4 md:px-8 font-sans" id='pricing'>
       <div className="max-w-300 mx-auto">
         
         {/* Header Section */}

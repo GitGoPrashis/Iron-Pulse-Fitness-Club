@@ -45,9 +45,9 @@ const programsData = [
 
 const Programs = () => {
     return (
-        <div>
-            <section className="bg-[#0a0a0a] py-20 px-4 md:px-8 font-sans overflow-hidden">
-                <div className="max-w-7xl mx-auto">
+        <div >
+            <section className="bg-[#0a0a0a] py-20 px-4 md:px-8 font-sans overflow-hidden" id='programs' >
+                <div className="max-w-7xl mx-auto" >
                     
                     {/* Header Section */}
                     <div className="text-center mb-16">

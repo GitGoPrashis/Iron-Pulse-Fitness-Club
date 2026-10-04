@@ -1,5 +1,7 @@
 import React from 'react'
 import Animated from './Animated'
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
   return (
@@ -62,12 +64,21 @@ const Home = () => {
           {/* Button */}
           <Animated>
 
-          <a
+
+          {/* <a
+          
+          
             href="#join"
             className="inline-block mt-10 bg-yellow-500 hover:bg-yellow-400 text-black font-bold tracking-widest px-10 py-5 rounded-md transition duration-300 shadow-xl shadow-yellow-500/20"
           >
             JOIN NOW
-          </a>
+          </a> */}
+          <Link
+                  to="/join-us-page"
+                  className="inline-block mt-10 bg-yellow-500 hover:bg-yellow-400 text-black font-bold tracking-widest px-10 py-5 rounded-md transition duration-300 shadow-xl shadow-yellow-500/20"
+                  
+                > JOIN NOW
+                </Link>
           </Animated>
 
         </div>

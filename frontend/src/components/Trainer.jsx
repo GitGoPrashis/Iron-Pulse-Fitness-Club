@@ -35,7 +35,7 @@ const trainersData = [
 const Trainer = () => {
   return (
     <div>
-        <section className="bg-[#0a0a0a] py-20 px-4 md:px-8 font-sans">
+        <section className="bg-[#0a0a0a] py-20 px-4 md:px-8 font-sans" id='trainers'>
       <div className="max-w-7xl mx-auto">
         
         {/* Header Section */}
