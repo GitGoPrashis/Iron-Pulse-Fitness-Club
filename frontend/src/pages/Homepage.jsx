@@ -8,6 +8,7 @@ import Trainer from '../components/Trainer'
 import Transformations from '../components/Transformations'
 import Customers from '../components/Customers'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 const Homepage = () => {
     return (
@@ -22,6 +23,7 @@ const Homepage = () => {
             <Transformations/>
             <Customers/>
             <Contact/>
+            <Footer/>
 
         </div>
     )

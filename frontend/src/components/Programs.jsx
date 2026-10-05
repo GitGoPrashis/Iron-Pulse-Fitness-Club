@@ -1,4 +1,5 @@
 import React from 'react'
+import Animated from './Animated';
 
 
 const programsData = [
@@ -56,10 +57,11 @@ const Programs = () => {
                                 Our Programs
                             </span>
                         </div>
-                        
+                        <Animated y={-25} delay={0.2}>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white uppercase tracking-tight mb-6 leading-tight">
                             Transform Your Body With <span className="text-yellow-500">Expert Training</span>
                         </h2>
+                        </Animated>
                         
                         <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
                             Choose from our specialized programs designed to meet your fitness goals
@@ -72,7 +74,7 @@ const Programs = () => {
                             <div 
                                 key={program.id} 
                                 // className="bg-[#111111] rounded-lg overflow-hidden flex flex-col h-full shadow-lg group border border-white/5 hover:border-yellow-500/50  transition-all duration-300 hover:-translate-y-1"
-                                className="bg-[#111111] rounded-lg overflow-hidden flex flex-col h-full shadow-lg group border border-white/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_2px_rgba(234,179,8,0.35)]"
+                                className="bg-[#111111] rounded-lg overflow-hidden flex flex-col h-full shadow-lg group border border-white/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_12px_rgba(234,179,8,0.35)] hover:border-amber-300"
                             >
                                 {/* Image Container */}
                                 <div className="h-56 lg:h-64 overflow-hidden relative shrink-0">

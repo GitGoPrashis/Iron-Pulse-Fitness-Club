@@ -94,7 +94,7 @@ const PricingData = () => {
           {pricingData.map((plan) => (
             <div 
               key={plan.id} 
-              className={`relative flex flex-col bg-[#151515] rounded-xl overflow-hidden transition-transform duration-300 hover:border-yellow-500 shadow-[0_0_30px_rgba(234,179,8,0.15) ]
+              className={`relative flex flex-col bg-[#151515] rounded-xl overflow-hidden transition-transform duration-300 hover:border-yellow-500 ) ]
                 
                 ${plan.isPopular ? 'border-2 border-yellow-500 shadow-[0_0_30px_rgba(234,179,8,0.15)] z-10' : 'border border-white/5'}
               `}

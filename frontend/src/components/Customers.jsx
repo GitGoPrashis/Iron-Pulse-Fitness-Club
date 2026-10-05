@@ -29,6 +29,7 @@ const testimonialsData = [
 const Customers = () => {
     return (
         <div>
+            
             <section className="bg-[#0a0a0a] py-24 px-4 md:px-8 font-sans">
                 <div className="max-w-7xl mx-auto">
 
@@ -92,6 +93,7 @@ const Customers = () => {
 
                 </div>
             </section>
+            
 
         </div>
     )
