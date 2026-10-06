@@ -9,7 +9,7 @@ const Joinuspage = () => {
            <div className="fixed inset-0 z-100 flex items-center justify-center bg-black backdrop-blur-sm px-4">
       
       {/* Modal Container */}
-      <div className="relative w-full max-w-md bg-[#1a1a1a] rounded-xl border border-yellow-500 p-8 md:p-10 shadow-[0_0_40px_rgba(234,179,8,0.15)] flex flex-col items-center text-center animate-in fade-in zoom-in-95 duration-300">
+      <div className="relative w-full max-w-md bg-[#1a1a1a] rounded-xl border border-yellow-500 p-8 md:p-10 shadow-[0_0_20px_12px_rgba(234,179,8,0.35)]  flex flex-col items-center text-center animate-in fade-in zoom-in-95 duration-300">
         
         {/* Close Button */}
 

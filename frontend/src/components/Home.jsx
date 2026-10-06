@@ -28,7 +28,7 @@ const Home = () => {
      
         <div className="max-w-4xl">
 
-        <Animated y={-25} delay={0.2}>
+        <Animated y={25} delay={0.3}>
 
       
           {/* Small Heading */}
@@ -62,7 +62,7 @@ const Home = () => {
           </Animated>
 
           {/* Button */}
-          <Animated>
+          <Animated y={25} delay={0.3}>
 
 
           {/* <a

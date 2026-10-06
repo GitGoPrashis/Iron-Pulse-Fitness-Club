@@ -76,11 +76,14 @@ const CheckIcon = () => (
 const PricingData = () => {
   return (
     <>
-    <section className="bg-[#0a0a0a] py-24 px-4 md:px-8 font-sans" id='pricing'>
-      <div className="max-w-300 mx-auto">
+    <section className="bg-[#0a0a0af2] py-24 px-2 md:px-8 font-sans" id='pricing'>
+      <div className="max-w-360 mx-auto">
+       
         
         {/* Header Section */}
+         
         <div className="text-center mb-16">
+          <p className=' text-yellow-500 uppercase mb-2.5 tracking-widest' >Membership Plans</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-white uppercase tracking-tight mb-4">
             Choose Your <span className="text-yellow-500">Perfect Plan</span>
           </h2>
@@ -90,17 +93,17 @@ const PricingData = () => {
         </div>
 
         {/* Pricing Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  ">
           {pricingData.map((plan) => (
             <div 
               key={plan.id} 
-              className={`relative flex flex-col bg-[#151515] rounded-xl overflow-hidden transition-transform duration-300 hover:border-yellow-500 ) ]
+              className={`relative flex flex-col bg-[#201d1de5] rounded-xl overflow-hidden transition-transform duration-300 hover:border-yellow-500 hover:-translate-y-2  hover:shadow-[0_0_20px_12px_rgba(234,179,8,0.35)]  ) ]
                 
                 ${plan.isPopular ? 'border-2 border-yellow-500 shadow-[0_0_30px_rgba(234,179,8,0.15)] z-10' : 'border border-white/5'}
               `}
             >
               
-              {/* "Popular" Ribbon (Only for PRO plan) */}
+              {/* "Popular" Ribbon (Only for PRO plan) bg-[#151515] */}
               {plan.isPopular && (
                 <div className="absolute top-0 right-0 w-32 h-32 overflow-hidden">
                   <div className="absolute top-5.5 right-8 w-35 bg-yellow-500 text-black text-[11px] font-black uppercase tracking-widest text-center rotate-45 py-1.5 shadow-sm">
@@ -125,11 +128,11 @@ const PricingData = () => {
                 </div>
 
                 {/* Features List */}
-                <div className="flex flex-col gap-4 mb-10 flex-1">
+                <div className="flex flex-col gap-6 mb-5 flex-1">
                   {plan.features.map((feature, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <CheckIcon />
-                      <span className="text-gray-300 text-sm leading-snug">
+                      <span className="text-gray-500 text-lg leading-snug">
                         {feature}
                       </span>
                     </div>
@@ -138,9 +141,9 @@ const PricingData = () => {
 
                 {/* Action Button */}
                 <button 
-                  className={`w-full py-3.5 px-4 rounded font-bold text-sm tracking-wider uppercase transition-colors duration-300
+                  className={`w-full py-4 px-4 rounded font-bold text-sm tracking-wider uppercase transition-colors duration-300 mb-30
                     ${plan.isPopular 
-                      ? 'bg-yellow-500 text-black hover:bg-yellow-400' 
+                      ? 'bg-yellow-500 text-black hover:bg-yellow-400 ' 
                       : 'bg-transparent text-yellow-500 border-2 border-yellow-500 hover:bg-yellow-500 hover:text-black'
                     }
                   `}
@@ -152,7 +155,9 @@ const PricingData = () => {
             </div>
           ))}
         </div>
+        
 
+        
       </div>
     </section>
       

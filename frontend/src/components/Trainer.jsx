@@ -1,4 +1,5 @@
 import React from 'react'
+import Animated from './Animated';
 
 // putting the data for the trainers
 const trainersData = [
@@ -37,8 +38,11 @@ const Trainer = () => {
     <div>
         <section className="bg-[#0a0a0a] py-20 px-4 md:px-8 font-sans" id='trainers'>
       <div className="max-w-7xl mx-auto">
+        <Animated delay={0.4} y={25}>
+       
         
         {/* Header Section */}
+        
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
             <span className="text-yellow-500 text-xs md:text-sm font-bold tracking-[0.2em] uppercase">
@@ -54,6 +58,7 @@ const Trainer = () => {
             Learn from the best in the industry
           </p>
         </div>
+        
 
         {/* Trainers Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
@@ -91,6 +96,7 @@ const Trainer = () => {
             </div>
           ))}
         </div>
+        </Animated>
 
       </div>
     </section>

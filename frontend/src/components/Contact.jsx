@@ -1,4 +1,5 @@
 import React from 'react'
+import Animated from './Animated';
 
 const contactData = [
   {
@@ -44,8 +45,9 @@ const contactData = [
 const Contact = () => {
   return (
     <div>
-        <section id="contact" className="bg-[#0a0a0a] py-24 px-4 md:px-8 font-sans">
+        <section id="contact" className="bg-[#0a0a0a] py-24 px-4 md:px-8 font-sans scroll-mt-18">
       <div className="max-w-6xl mx-auto">
+        <Animated>
         
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -110,6 +112,7 @@ const Contact = () => {
           </div>
 
         </div>
+        </Animated>
 
       </div>
     </section>

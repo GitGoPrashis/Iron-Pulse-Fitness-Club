@@ -1,4 +1,5 @@
 import React from 'react'
+import Animated from './Animated';
 
 const transformationsData = [
   {
@@ -28,7 +29,9 @@ const Transformations = () => {
   return (
     <div><section className="bg-[#0a0a0a] py-24 px-4 md:px-8 font-sans">
       <div className="max-w-7xl mx-auto">
+
         
+        <Animated delay={0.4} y={25}>
         {/* Header Section */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
@@ -101,6 +104,8 @@ const Transformations = () => {
             </div>
           ))}
         </div>
+        </Animated>
+        
 
       </div>
     </section>

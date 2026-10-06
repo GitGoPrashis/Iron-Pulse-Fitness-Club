@@ -30,17 +30,11 @@ const Aboutpage = () => {
       id = "about"
   className = "bg-[#191919] text-white py-20 md:py-24 px-6 md:px-10 lg:px-16"
     >
+      <Animated delay={0.4} y={25}>
     <div className="max-w-350 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
    
-      {/* Left Side: Gym Image */}
-      {/* <div className="w-full">
-        <img
-          src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1975"
-          alt="Iron Pulse premium fitness club"
-          className="w-full h-87.5 md:h-125 lg:h-152.5 object-cover rounded-md grayscale"
-        />
-      </div> */}
+      
       <div className="w-full">
   <img
     src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1975"
@@ -116,6 +110,7 @@ const Aboutpage = () => {
 
       </div>
     </div>
+    </Animated>
     </section >
   
   )

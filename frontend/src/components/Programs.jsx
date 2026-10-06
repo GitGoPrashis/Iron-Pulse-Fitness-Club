@@ -48,6 +48,7 @@ const Programs = () => {
     return (
         <div >
             <section className="bg-[#0a0a0a] py-20 px-4 md:px-8 font-sans overflow-hidden" id='programs' >
+                    <Animated delay={0.4} y={25}>
                 <div className="max-w-7xl mx-auto" >
                     
                     {/* Header Section */}
@@ -57,11 +58,11 @@ const Programs = () => {
                                 Our Programs
                             </span>
                         </div>
-                        <Animated y={-25} delay={0.2}>
+                       
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white uppercase tracking-tight mb-6 leading-tight">
                             Transform Your Body With <span className="text-yellow-500">Expert Training</span>
                         </h2>
-                        </Animated>
+                       
                         
                         <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
                             Choose from our specialized programs designed to meet your fitness goals
@@ -73,8 +74,8 @@ const Programs = () => {
                         {programsData.map((program) => (
                             <div 
                                 key={program.id} 
-                                // className="bg-[#111111] rounded-lg overflow-hidden flex flex-col h-full shadow-lg group border border-white/5 hover:border-yellow-500/50  transition-all duration-300 hover:-translate-y-1"
-                                className="bg-[#111111] rounded-lg overflow-hidden flex flex-col h-full shadow-lg group border border-white/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_12px_rgba(234,179,8,0.35)] hover:border-amber-300"
+                                
+                                className="bg-[#111111] rounded-lg overflow-hidden flex flex-col h-full shadow-lg group border border-white/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_20px_12px_rgba(234,179,8,0.35)] hover:border-amber-300"
                             >
                                 {/* Image Container */}
                                 <div className="h-56 lg:h-64 overflow-hidden relative shrink-0">
@@ -88,7 +89,8 @@ const Programs = () => {
                                 </div>
 
                                 {/* Content Container */}
-                                <div className="p-6 md:p-8 flex flex-col flex-1">
+                                
+                                <div className="p-6 md:p-8 flex flex-col flex-1 hover:-translate-y-1 ">
                                     <h3 className="text-xl md:text-2xl font-bold text-white uppercase mb-4 tracking-wide group-hover:text-yellow-500 transition-colors duration-300">
                                         {program.title}
                                     </h3>
@@ -96,11 +98,13 @@ const Programs = () => {
                                         {program.description}
                                     </p>
                                 </div>
+                               
                             </div>
                         ))}
                     </div>
 
                 </div>
+                    </Animated>
             </section>
 
            
