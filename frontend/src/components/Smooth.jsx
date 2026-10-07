@@ -1,0 +1,27 @@
+import { useEffect } from "react";
+import Lenis from "lenis";
+
+const Smooth = () => {
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.5,
+      smoothWheel: true,
+      wheelMultiplier: 1.5,
+    });
+
+    const raf = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
+  return null;
+};
+
+export default Smooth;

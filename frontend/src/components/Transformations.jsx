@@ -27,7 +27,7 @@ const transformationsData = [
 
 const Transformations = () => {
   return (
-    <div><section className="bg-[#0a0a0a] py-24 px-4 md:px-8 font-sans">
+    <div><section className=" bg-[#191919] py-24 px-4 md:px-8 font-sans">
       <div className="max-w-7xl mx-auto">
 
         
@@ -54,7 +54,7 @@ const Transformations = () => {
           {transformationsData.map((item) => (
             <div 
               key={item.id} 
-              className="bg-[#111111] rounded-xl overflow-hidden flex flex-col h-full shadow-lg group border border-white/5 hover:border-yellow-500/50 transition-all duration-300 hover:-translate-y-1"
+              className="bg-[#111111] rounded-xl overflow-hidden flex flex-col h-full shadow-lg group border border-white/5 hover:border-yellow-500/50 transition-all duration-300  hover:-translate-y-2 hover:shadow-[0_0_20px_12px_rgba(234,179,8,0.35)]"
             >
               
               {/* Before & After Image Container */}

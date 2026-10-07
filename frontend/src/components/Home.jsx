@@ -8,7 +8,7 @@ const Home = () => {
     <div>
        <div id="home" className="relative min-h-screen overflow-hidden">
 
-      {/* Background Image */}
+      {/* Background Image in header section*/}
       <img
         src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070"
         alt="Gym"
@@ -65,14 +65,7 @@ const Home = () => {
           <Animated y={25} delay={0.3}>
 
 
-          {/* <a
-          
-          
-            href="#join"
-            className="inline-block mt-10 bg-yellow-500 hover:bg-yellow-400 text-black font-bold tracking-widest px-10 py-5 rounded-md transition duration-300 shadow-xl shadow-yellow-500/20"
-          >
-            JOIN NOW
-          </a> */}
+        {/* Link tag is use to naviagate the pages */}
           <Link
                   to="/join-us-page"
                   className="inline-block mt-10 bg-yellow-500 hover:bg-yellow-400 text-black font-bold tracking-widest px-10 py-5 rounded-md transition duration-300 shadow-xl shadow-yellow-500/20"

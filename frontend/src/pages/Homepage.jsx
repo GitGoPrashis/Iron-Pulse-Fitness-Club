@@ -1,4 +1,5 @@
 import React from 'react'
+import Smooth from '../components/Smooth'
 import Navbar from '../components/Navbar'
 import Aboutpage from '../components/Aboutpage'
 import Home from '../components/Home'
@@ -12,7 +13,8 @@ import Footer from '../components/Footer'
 
 const Homepage = () => {
     return (
-        <div>
+        <>
+        <Smooth/>
 
             <Navbar />
             <Home />
@@ -25,7 +27,7 @@ const Homepage = () => {
             <Contact/>
             <Footer/>
 
-        </div>
+        </>
     )
 }
 

@@ -75,7 +75,7 @@ const Programs = () => {
                             <div 
                                 key={program.id} 
                                 
-                                className="bg-[#111111] rounded-lg overflow-hidden flex flex-col h-full shadow-lg group border border-white/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_20px_12px_rgba(234,179,8,0.35)] hover:border-amber-300"
+                                className="bg-[#111111c7] rounded-lg overflow-hidden flex flex-col h-full shadow-lg group border border-white/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_20px_12px_rgba(234,179,8,0.35)] hover:border-amber-300"
                             >
                                 {/* Image Container */}
                                 <div className="h-56 lg:h-64 overflow-hidden relative shrink-0">

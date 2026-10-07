@@ -79,14 +79,7 @@ const Navbar = () => {
         ))}
         
         <li>
-          {/* <a
           
-          
-            href="#join"
-            className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-7 py-3 rounded-md transition duration-300 shadow-lg shadow-yellow-500/20 text-sm uppercase tracking-wider"
-          >
-            Join Now
-          </a> */}
           <Link
         to="/join-us-page"
         className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-7 py-3 rounded-md transition duration-300 shadow-lg shadow-yellow-500/20 text-sm uppercase tracking-wider inline-block"

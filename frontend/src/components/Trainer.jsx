@@ -36,71 +36,86 @@ const trainersData = [
 const Trainer = () => {
   return (
     <div>
-        <section className="bg-[#0a0a0a] py-20 px-4 md:px-8 font-sans" id='trainers'>
-      <div className="max-w-7xl mx-auto">
-        <Animated delay={0.4} y={25}>
-       
-        
-        {/* Header Section */}
-        
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="text-yellow-500 text-xs md:text-sm font-bold tracking-[0.2em] uppercase">
-              Meet Our Team
-            </span>
-          </div>
-          
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white uppercase tracking-tight mb-6 leading-tight">
-            Expert <span className="text-yellow-500">Certified Trainers</span>
-          </h2>
-          
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
-            Learn from the best in the industry
-          </p>
-        </div>
-        
+      <section className="bg-[#0a0a0a] py-20 px-4 md:px-8 font-sans" id='trainers'>
+        <div className="max-w-7xl mx-auto">
+          <Animated delay={0.4} y={25}>
 
-        {/* Trainers Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          {trainersData.map((trainer) => (
-            <div 
-              key={trainer.id} 
-              className="bg-[#111111] rounded-lg overflow-hidden flex flex-col h-full shadow-lg group border border-white/5 hover:border-yellow-500/50 transition-all duration-300 hover:-translate-y-1"
-            >
-              {/* Image Container */}
-              <div className="h-72 overflow-hidden relative shrink-0">
-                <img 
-                  src={trainer.image} 
-                  alt={trainer.name} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  loading="lazy" 
-                />
-                {/* Dark gradient overlay for better text readability if needed, or just style */}
-                <div className="absolute inset-0 bg-linear-to-t from-[#111111] via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+
+            {/* Header Section */}
+
+            <div className="text-center mb-16">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <span className="text-yellow-500 text-xs md:text-sm font-bold tracking-[0.2em] uppercase">
+                  Meet Our Team
+                </span>
               </div>
 
-              {/* Content Container */}
-              <div className="p-6 md:p-8 flex flex-col flex-1 text-center">
-                <h3 className="text-xl md:text-2xl font-bold text-white uppercase mb-2 tracking-wide group-hover:text-yellow-500 transition-colors duration-300">
-                  {trainer.name}
-                </h3>
-                
-                <p className="text-yellow-500 text-sm font-semibold tracking-wide mb-3">
-                  {trainer.specialty}
-                </p>
-                
-                <p className="text-gray-400 text-sm mt-auto">
-                  {trainer.experience}
-                </p>
-              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white uppercase tracking-tight mb-6 leading-tight">
+                Expert <span className="text-yellow-500">Certified Trainers</span>
+              </h2>
+
+              <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
+                Learn from the best in the industry
+              </p>
             </div>
-          ))}
-        </div>
-        </Animated>
 
-      </div>
-    </section>
-      
+
+            {/* Trainers Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+              {trainersData.map((trainer) => (
+                <div
+                  key={trainer.id}
+                  className="bg-[#111111] rounded-lg overflow-hidden flex flex-col h-full shadow-lg group border border-white/5 hover:border-yellow-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_0_rgba(212,175,55,0.3)]"
+                >
+                  {/* Image Container */}
+                  <div className="h-72 overflow-hidden relative shrink-0 ">
+                    <img
+                      src={trainer.image}
+                      alt={trainer.name}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
+                    />
+                    {/* Dark gradient overlay for better text readability if needed, or just style */}
+                    <div className="absolute inset-0 bg-linear-to-t from-[#111111] via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                  </div>
+
+                 
+                  <div className="p-6 md:p-8 flex flex-col flex-1 text-center ">
+                    {/* Name: always visible */}
+                    <h3 className="text-xl md:text-2xl font-bold text-white uppercase tracking-wide 
+                 group-hover:text-yellow-500 transition-colors duration-300 ">
+                      {trainer.name}
+                    </h3>
+
+                    <Animated scale={0.2}>
+
+                      {/* Specialty: hidden normally, visible on hover */}
+                      <p className="text-yellow-500 text-sm font-semibold tracking-wide mt-2
+                opacity-0 max-h-0 overflow-hidden
+                group-hover:opacity-100 group-hover:max-h-10
+                transition-all duration-300">
+                        {trainer.specialty}
+                      </p>
+
+                      {/* Experience: hidden normally, visible on hover */}
+                      <p className="text-gray-400 text-sm mt-2
+                opacity-0 max-h-0 overflow-hidden
+                group-hover:opacity-100 group-hover:max-h-10
+                transition-all duration-300">
+                        {trainer.experience}
+                      </p>
+                    </Animated>
+                  </div>
+
+
+                </div>
+              ))}
+            </div>
+          </Animated>
+
+        </div>
+      </section>
+
     </div>
   )
 }

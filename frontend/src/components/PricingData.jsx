@@ -76,7 +76,7 @@ const CheckIcon = () => (
 const PricingData = () => {
   return (
     <>
-    <section className="bg-[#0a0a0af2] py-24 px-2 md:px-8 font-sans" id='pricing'>
+    <section className="bg-[#191919] py-24 px-2 md:px-8 font-sans" id='pricing'>
       <div className="max-w-360 mx-auto">
        
         
@@ -97,7 +97,7 @@ const PricingData = () => {
           {pricingData.map((plan) => (
             <div 
               key={plan.id} 
-              className={`relative flex flex-col bg-[#201d1de5] rounded-xl overflow-hidden transition-transform duration-300 hover:border-yellow-500 hover:-translate-y-2  hover:shadow-[0_0_20px_12px_rgba(234,179,8,0.35)]  ) ]
+              className={`relative flex flex-col bg-[#201d1dc5] rounded-xl overflow-hidden transition-transform duration-300 hover:border-yellow-500 hover:-translate-y-2  hover:shadow-[0_0_20px_12px_rgba(234,179,8,0.35)]  ) ]
                 
                 ${plan.isPopular ? 'border-2 border-yellow-500 shadow-[0_0_30px_rgba(234,179,8,0.15)] z-10' : 'border border-white/5'}
               `}

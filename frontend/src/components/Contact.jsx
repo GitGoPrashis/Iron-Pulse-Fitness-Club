@@ -45,7 +45,7 @@ const contactData = [
 const Contact = () => {
   return (
     <div>
-        <section id="contact" className="bg-[#0a0a0a] py-24 px-4 md:px-8 font-sans scroll-mt-18">
+        <section id="contact" className="bg-[#191919] py-24 px-4 md:px-8 font-sans scroll-mt-18">
       <div className="max-w-6xl mx-auto">
         <Animated>
         
@@ -74,7 +74,7 @@ const Contact = () => {
             {contactData.map((info) => (
               <div 
                 key={info.id} 
-                className="bg-[#151515] rounded-lg p-6 md:p-8 flex items-start gap-5 border border-white/5 hover:border-yellow-500/30 transition-colors duration-300"
+                className="bg-[#1d1c1cf2] rounded-lg p-6 md:p-8 flex items-start gap-5 border border-white/5 hover:bg-black transition-colors duration-300 "
               >
                 {/* Icon */}
                 <div className="text-2xl md:text-3xl shrink-0 mt-0.5">
