@@ -100,11 +100,21 @@ const Navbar = () => {
       </button>
 
       {/* Mobile Menu Dropdown */}
-      <div 
+      {/* for showing the moblile menu dropdown from upside */}
+      {/* <div 
         className={`absolute top-20 left-0 w-full bg-[#0a0a0a] border-b border-white/10 md:hidden overflow-hidden transition-all duration-300 ease-in-out shadow-2xl
           ${isOpen ? 'max-h-125 opacity-100 py-6' : 'max-h-0 opacity-0 py-0'}
         `}
-      >
+      > */}
+      {/* for showinf the mobile menu dropdown from left side */}
+      <div 
+  className={`absolute top-20 left-0 w-full bg-[#0a0a0a] border-r border-white/10 md:hidden overflow-hidden shadow-2xl z-40
+    transition-transform duration-300 ease-in-out
+    ${isOpen ? 'translate-x-0' : '-translate-x-full'}
+  `}
+>
+
+
         <ul className="flex flex-col items-center gap-6 list-none m-0 p-0">
           {navLinks.map((link) => (
             <li key={link.name} className="w-full text-center">
@@ -119,13 +129,20 @@ const Navbar = () => {
           ))}
           
           <li className="w-full flex justify-center mt-2">
-            <a
+            <Link to="/join-us-page"  onClick={closeMenu} 
+              className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-10 py-3 rounded-md transition duration-300 shadow-lg shadow-yellow-500/20 text-base uppercase tracking-wider"> Join Now
+            </Link>
+            
+           
+            {/* <a
+            
               href="#join"
               onClick={closeMenu} 
               className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-10 py-3 rounded-md transition duration-300 shadow-lg shadow-yellow-500/20 text-base uppercase tracking-wider"
             >
               Join Now
-            </a>
+            </a> */}
+           
           </li>
         </ul>
       </div>

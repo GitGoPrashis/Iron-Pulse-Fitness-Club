@@ -7,6 +7,11 @@ const Smooth = () => {
       duration: 1.5,
       smoothWheel: true,
       wheelMultiplier: 1.5,
+      syncTouch:false,
+      anchors:{
+        offset:-120
+      },
+      
     });
 
     const raf = (time) => {

@@ -67,7 +67,7 @@ const Footer = () => {
 
           {/* Column 2: Quick Links */}
           <div className="flex flex-col">
-            <h3 className="text-white font-bold text-lg uppercase tracking-wider mb-6">
+            <h3 className="text-yellow-500 font-bold text-lg uppercase tracking-wider mb-6">
               Quick Links
             </h3>
             <ul className="flex flex-col gap-3 list-none p-0 m-0">
@@ -86,7 +86,7 @@ const Footer = () => {
 
           {/* Column 3: Our Programs */}
           <div className="flex flex-col">
-            <h3 className="text-white font-bold text-lg uppercase tracking-wider mb-6">
+            <h3 className="text-yellow-500 font-bold text-lg uppercase tracking-wider mb-6">
               Our Programs
             </h3>
             <ul className="flex flex-col gap-3 list-none p-0 m-0">
@@ -105,7 +105,7 @@ const Footer = () => {
 
           {/* Column 4: Contact Info */}
           <div className="flex flex-col">
-            <h3 className="text-white font-bold text-lg uppercase tracking-wider mb-6">
+            <h3 className="text-yellow-500 font-bold text-lg uppercase tracking-wider mb-6">
               Contact Us
             </h3>
             <ul className="flex flex-col gap-4 list-none p-0 m-0">
@@ -142,21 +142,15 @@ const Footer = () => {
 
         {/* Divider */}
         <div className="w-full h-px bg-linear-to-r from-transparent via-white/10 to-transparent mb-8"></div>
+        
 
         {/* Bottom Copyright Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-          <p className="text-gray-500 text-sm">
+        <div className=" md:flex-row items-center justify-between gap-4 text-center md:text-left">
+          <p className="text-gray-500 text-sm text-center">
             © {currentYear} Iron Pulse Fitness Club. All Rights Reserved.
           </p>
           
-          <div className="flex items-center gap-6">
-            <a href="#" className="text-gray-500 hover:text-yellow-500 transition-colors text-sm">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-gray-500 hover:text-yellow-500 transition-colors text-sm">
-              Terms of Service
-            </a>
-          </div>
+          
         </div>
 
       </div>
