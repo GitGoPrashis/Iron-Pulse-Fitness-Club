@@ -81,6 +81,7 @@ const Aboutpage = () => {
 
         {/* Feature Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-9">
+          
 
           {features.map((feature, index) => (
             <div

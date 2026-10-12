@@ -6,6 +6,7 @@
 ![Iron Pulse Fitness Club](https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop)
 
 ---
+![Iron Pulse Fitness Club](./screenshort/s1.png)
 
 ## 📋 Table of Contents
 
@@ -34,7 +35,7 @@ The site features a modern dark theme with striking yellow accents, smooth scrol
 ## ✨ Features
 
 ### 🎨 Design & UX
-- **Fully Responsive** — Optimized for mobile, tablet, laptop, and desktop screens.
+- **Fully Responsive** — Optimized for mobile,laptop, and desktop screens.
 - **Dark Premium Theme** — Deep black background with bold yellow (`#eab308`) accents.
 - **Smooth Scrolling** — Powered by [Lenis](https://github.com/darkroomengineering/lenis) for a buttery-smooth scroll experience.
 - **Sticky Navbar** — Navbar sticks to the top with a dynamic background that changes on scroll.
@@ -44,14 +45,15 @@ The site features a modern dark theme with striking yellow accents, smooth scrol
 
 ### 📄 Sections Included
 1. **Hero Section** — Bold introductory headline with a call-to-action.
-2. **Programs** — 6+ training programs (Weight Training, Cardio, CrossFit, Personal Training, Fat Loss, Group Classes).
-3. **Pricing Plans** — 4-tier membership plans (Basic, Standard, Pro, Elite) with a "POPULAR" ribbon on the Pro plan.
-4. **Trainers** — Expert certified trainer profiles with images, specialties, and experience.
-5. **Transformations** — Before/After success stories with grayscale-to-color hover effects.
-6. **Testimonials** — Member reviews with star ratings and author avatars.
-7. **Contact Section** — Contact cards (Location, Phone, Timings) alongside a large feature image.
-8. **Join Modal** — A glowing pop-up modal with "Join via WhatsApp" and "Call Us Now" buttons.
-9. **Footer** — Multi-column footer with Quick Links, Programs, Contact Info, and Social Media icons.
+2. **About Section** - Adding more details about this fitness website.
+3. **Programs** — 6+ training programs (Weight Training, Cardio, CrossFit, Personal Training, Fat Loss, Group Classes).
+4. **Pricing Plans** — 4-tier membership plans (Basic, Standard, Pro, Elite) with a "POPULAR" ribbon on the Pro plan.
+5. **Trainers** — Expert certified trainer profiles with images, specialties, and experience.
+6. **Transformations** — Before/After success stories with grayscale-to-color hover effects.
+7. **Testimonials** — Member reviews with star ratings and author avatars.
+8. **Contact Section** — Contact cards (Location, Phone, Timings) alongside a large feature image.
+9. **Join Us Page** — A glowing pop-up page with "Join via WhatsApp" and "Call Us Now" buttons.
+10. **Footer** — Multi-column footer with Quick Links, Programs, Contact Info, and Social Media icons.
 
 ### ⚡ Technical Features
 - **React Hooks** — `useState`, `useEffect` used extensively for interactivity.
@@ -72,6 +74,9 @@ The site features a modern dark theme with striking yellow accents, smooth scrol
 | **Tailwind CSS** | Utility-first CSS framework |
 | **Lenis** | Smooth scrolling library |
 | **JavaScript (ES6+)** | Core programming language |
+| **Motion** | animation library that makes creating smooth, high-performance interactions incredibly simple. |
+| **React-Router-Dom** | library used to handle routing and navigation in React web applications. |
+
 
 ---
 
