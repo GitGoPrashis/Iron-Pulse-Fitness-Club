@@ -3,23 +3,18 @@
 
 > India's Most Premium Fitness Destination — A modern, fully responsive single-page fitness club website built with React and Tailwind CSS.
 
-![Iron Pulse Fitness Club](https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop)
 
----
+
 ![Iron Pulse Fitness Club](./screenshort/s1.png)
+---
 
-## 📋 Table of Contents
+## 📋 Table of Contents Sections Included
 
 - [About the Project](#-about-the-project)
 - [Features](#-features)
+- [Sections Included](#-Sections-Included)
 - [Tech Stack](#-tech-stack)
 - [Getting Started](#-getting-started)
-- [Project Structure](#-project-structure)
-- [Customization](#-customization)
-- [Available Scripts](#-available-scripts)
-- [Performance Optimizations](#-performance-optimizations)
-- [Browser Support](#-browser-support)
-- [License](#-license)
 - [Contact](#-contact)
 
 ---
